@@ -1,2 +1,3 @@
-alert("Im Working, Im JS. Im Beautiful.");
-console.log("Im Working, Im JS. Im Beautiful.");
+const title = document.getElementById("title");
+console.log(title.innerHTML);
+title.innerHTML = "Hi! From JS";
