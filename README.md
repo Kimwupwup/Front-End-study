@@ -1,9 +1,9 @@
-# Front-end study
+# Front-End study
 
 ## Youtube - 노마드 코더 Nomad Coders
 ***https://www.youtube.com/channel/UCUpJs89fSBXNolQGOYKn0YQ/featured***
 
-## JS Basics
+### JS Basics
 ***https://www.youtube.com/watch?v=wUHncG3VwPw&list=PL7jH19IHhOLM8YwJMTa3UkXZN-LldYnyK***
 
 ---
