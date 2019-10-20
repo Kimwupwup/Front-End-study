@@ -64,6 +64,17 @@
     transition: color 0.5s ease-in-out;
   }
   ```
+  
+- localStorage
+  ```javascript
+  localStorage.setItem("name", "Wuppu");
+  localStorage.getItem("name");   // "Wuppu"
+  ```
+
+- event.preventDefault() 이벤트의 기본동작을 막는 방법(form입력하였을 때 새로고침되는 기본동작...)
+  ```javascript
+  event.preventDefault();
+  ```
 ---
 ### 참고
 - [자바스크립트] 성능을 높이는 코드 스타일
