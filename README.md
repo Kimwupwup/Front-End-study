@@ -75,6 +75,25 @@
   ```javascript
   event.preventDefault();
   ```
+  
+- `<span>` 태그 & `<div>` 태그
+  `<span>` 태그는 `<div>` 태그처럼 특별한 기능을 갖고있지 않고, CSS와 함께 쓰입니다.
+  `<div>` 태그와의 차이점은 `display`속성이 block이 아닌, `inline`이라는 점인데, 이는 CSS display항목에서 세부 정보를 알 수 있습니다.
+  이 둘의 차이를 쉽게 설명하자면, `<div>`는 줄 바꿈이 되지만, `<span>`은 줄 바꿈이 되지 않는다는 점입니다.
+  (참조) https://ofcourse.kr/html-course/span-%ED%83%9C%EA%B7%B8
+  
+- Element 생성 및 삽입
+  ```javascript
+  // ul(unordered list)에 항목 추가하기
+  const li = document.createElement("li");          // list 생성
+  const delBtn = document.createElemnt("button");   // list를 제거할 수 있는 버튼 생성
+  delBtn.innerText = "X";
+  const span = document.createElement("span");
+  span.innerText = "text";
+  li.appendChild(span);         // li에 span 삽입
+  li.appendChild(delBtn);       // li에 delBtn 삽입
+  toDoList.appendChild(li);     // ul에 li 삽입
+  ```
 ---
 ### 참고
 - [자바스크립트] 성능을 높이는 코드 스타일
