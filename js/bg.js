@@ -3,10 +3,11 @@ const body = document.querySelector("body");
 const IMG_NUMBER = 7;
 
 function paintImage(imgNumber) {
-  const image = new Image();
-  image.src = `/images/${imgNumber}.jpg`;
-  image.classList.add("bgImage");
-  body.prepend(image);
+  body.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/${imgNumber}.jpg)`;
+  // const image = new Image();
+  // image.src = `/images/${imgNumber}.jpg`;
+  // image.classList.add("bgImage");
+  // body.prepend(image);
 }
 function genRandom() {
   // const number = Math.floor(Math.random() * 5); // 오름
