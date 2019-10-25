@@ -2,16 +2,38 @@
 
 section {
   display: flex;
-  height: 80vh;
+  height: 100vh;
   justify-content: center;
   align-items: center;
+}
+
+section[class="section1"] {
+  background-color: rgb(92, 110, 95);
+}
+.content {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  color: white;
+  font-size: 20px;
+  transform: translate(-15%, -50%);
+  z-index: 3;
+  animation: openLogo 1s ease-in-out forwards;
+}
+
+.hero1 {
+  height: 60%;
+  width: 100%;
+  position: relative;
+  background-color: skyblue;
+  animation: openHero 1s ease-in-out forwards;
 }
 
 .hero {
   height: 60%;
   width: 100%;
   position: relative;
-  animation: openHero 1.5s ease-in-out forwards;
+  animation: openHero 1s ease-in-out forwards;
 }
 
 .hero img {
@@ -22,13 +44,13 @@ section {
 
 .headline {
   position: absolute;
-  top: 70%;
+  top: 20%;
   left: 10%;
   font-size: 100px;
-  transform: translate(-20%, -50%);
+  transform: translate(-10%, -50%);
   color: white;
   z-index: 3;
-  animation: openLogo 1.5s ease-in-out forwards;
+  animation: openLogo 1s ease-in-out forwards;
 }
 
 .hero::after {

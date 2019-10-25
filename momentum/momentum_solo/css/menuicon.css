@@ -5,8 +5,8 @@ input[id="menuicon"] {
 input[id="menuicon"] + label {
   justify-self: end;
   display: block;
-  width: 60px;
-  height: 40px;
+  width: 15%;
+  height: 80%;
   position: relative;
   cursor: pointer;
   z-index: 3;
