@@ -8,5 +8,5 @@
 
 **_https://www.youtube.com/watch?v=wUHncG3VwPw&list=PL7jH19IHhOLM8YwJMTa3UkXZN-LldYnyK_**
 
-[노마드 코더 필기](/momentum/README.md)
+[노마드 코더 필기](momentum/Front-End study(노마드 코더).md)
 
