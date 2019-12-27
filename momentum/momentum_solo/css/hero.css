@@ -10,13 +10,14 @@ section {
 section[class="section1"] {
   background-color: rgb(92, 110, 95);
 }
+
 .content {
   position: absolute;
   top: 40%;
   left: 15%;
   color: white;
-  font-size: 20px;
-  transform: translate(-15%, -50%);
+  font-size: 4vh;
+  transform: translate(-15%, 0%);
   z-index: 3;
   animation: openLogo 1s ease-in-out forwards;
 }
@@ -46,7 +47,7 @@ section[class="section1"] {
   position: absolute;
   top: 20%;
   left: 10%;
-  font-size: 100px;
+  font-size: 10vh;
   transform: translate(-10%, -50%);
   color: white;
   z-index: 3;
