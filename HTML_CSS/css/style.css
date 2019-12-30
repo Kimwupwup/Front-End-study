@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+button {
+    padding: 2rem 4rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: lightslategrey;
+    padding: 2rem 4rem;
+}
+
+button:focus {
+    background: greenyellow;
+}
+
+input:focus {
+    background: greenyellow;
+}
+
+/* h1 tag 앞뒤에 추가 */
+h1 {
+    font-size: 4rem;
+}
+h1::after {
+    content: "me";
+}
+h1::before {
+    content: "me";
+}

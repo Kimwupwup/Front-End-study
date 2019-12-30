@@ -1,0 +1,8 @@
+.my-list + ul {
+    list-style: none;
+    color: cyan;
+}
+
+.my-list + ul li:nth-child(1) {
+    color: blue;
+}

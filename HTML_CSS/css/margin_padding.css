@@ -1,0 +1,16 @@
+/* 
+ maring, padding을 주고 witdh를 100%하면 스크롤의 문제 발생한다.
+ 이를 해결하기 위해서 html 전체에 margin, padding 0를 주고(이건 안해도 된다는 것을 확인)
+ box-sizing border-box를 해주면 해결할 수 있다.
+ */
+* {
+    box-sizing: border-box;
+}
+div {
+    background-color: rgb(31, 44, 85);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    border: 5px solid rgb(187, 225, 255);
+}
