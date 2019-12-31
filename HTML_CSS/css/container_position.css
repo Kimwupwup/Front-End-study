@@ -1,16 +1,59 @@
-/* 
- maring, padding을 주고 witdh를 100%하면 스크롤의 문제 발생한다.
- 이를 해결하기 위해서 html 전체에 margin, padding 0를 주고(이건 안해도 된다는 것을 확인)
- box-sizing border-box를 해주면 해결할 수 있다.
- */
+/*
+  Container position
+*/
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-div {
-    background-color: rgb(31, 44, 85);
-    color: white;
-    width: 100%;
-    padding: 20px;
-    margin-top: 20px;
-    border: 5px solid rgb(187, 225, 255);
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    height: 200%;
+}
+
+.container {
+    background: cadetblue;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    /*position: relative;*/
+}
+
+.box1, .box2, .box3 {
+    width: 20%;
+    height: 20%;
+    background: crimson;
+}
+
+.box2 {
+    background: lightblue;
+    position: relative;
+    left: 3rem;
+}
+
+.box3 {
+    background: rgb(255, 209, 124);
+    /* 
+    fixed 하면 항상 고정되어있음 
+    nav bar활용 가능
+    */
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; */
+    /* sticky 도 nav bar 에 활용할 수 있음 */
+    position: sticky;
+    top: 0%;
+}
+
+/* position: absolute & transform: traslate(when parent is not relative)*/
+.box1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

@@ -1,16 +1,20 @@
-/*
- Button styling
+/* 
+ inline 
 */
 html {
     font-size: 62.5%;
 }
-button {
-    margin: 20rem;
-    padding: 2rem 4rem;
-    background: none;
-    border: 0.3rem solid rgb(23, 80, 185);
-    color: white;
-    font-size: 2.4rem;
-    border-radius: 1rem;
-    background: rgb(23, 80, 185);
+
+h1 {
+    background: lightslategray;
+    height: 5rem;
+}
+
+a {
+    background: lightslategray;
+    display:inline-block;
+    height: 20rem;
+    width: 20rem;
+    margin: 2rem;
+    padding: 2rem;
 }

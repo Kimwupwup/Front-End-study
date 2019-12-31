@@ -1,38 +1,110 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  padding: 5rem 0rem;
+}
+
+h3 {
+  font-size: 2.8rem;
 }
 
 button {
-    padding: 2rem 4rem;
-    cursor: pointer;
+  font-size: 1.8rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.4rem;
+}
+
+nav {
+  background: rgb(23, 62, 107);
+  color: white;
+  padding: 1.8rem;
+}
+
+nav h1 {
+  float: left;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+}
+
+nav li {
+  float: left;
+  margin: 0rem 2rem;
+}
+
+.clear {
+  clear: both;
+}
+
+.hero-section {
+  background-image: url("/HTML_CSS/img/city_art_sky_127834_1920x1080.jpg");
+  height: 80rem;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding-top: 15rem;
+  text-shadow: 3px 3px 10px black;
+}
+
+.hero-section button {
+  margin-top: 4rem;
+  padding: 1rem 4rem;
+  background: rgb(50, 103, 163);
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
 button:hover {
-    background: lightslategrey;
-    padding: 2rem 4rem;
+    background: rgb(97, 138, 185);
 }
 
-button:focus {
-    background: greenyellow;
+.form-section {
+  text-align: center;
 }
 
-input:focus {
-    background: greenyellow;
+form {
 }
 
-/* h1 tag 앞뒤에 추가 */
-h1 {
-    font-size: 4rem;
+form input,
+form label,
+form textarea {
+  display: block;
+  font-size: 2.4rem;
 }
-h1::after {
-    content: "me";
+
+form input,
+form textarea {
+  margin: 2rem auto;
+  width: 50%;
 }
-h1::before {
-    content: "me";
+
+form button {
+  margin-bottom: 10rem;
+  padding: 1rem 4rem;
+  background: rgb(50, 103, 163);
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 50%;
 }
