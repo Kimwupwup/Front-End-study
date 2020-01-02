@@ -2,9 +2,18 @@
   min-height: 100vh;
   background: rgb(173, 243, 255);
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec {
+  margin: 10px;
+  display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .tweet {
   height: 300px;
   width: 300px;
