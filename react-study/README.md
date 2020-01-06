@@ -1,68 +1,65 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 노마드 코더 - React Basic
 
-## Available Scripts
+[노마드 코더 - React Fundamentals 2019](https://www.youtube.com/watch?v=gJdHKIj0Bx4&list=PL7jH19IHhOLPp990qs8MbSsUlzKcTKuCf&index=2)
 
-In the project directory, you can run:
+## Why...?
 
-### `npm start`
+- 많은 회사들이 사용하고 있기 때문이다.
+- Airbnb, npm, netflix, spotify, slack...
+- 많은 돈 ,시간, 자원이 투자되고 있다.
+- 많은 사람들이 사용하고 있기 때문에, 튜토리얼, 리뷰, 문제점을 쉽게 해결할 수 있다.
+- 점점 더 성장하고 있다.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## React
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- Virtual DOM(Virtual Document Object Model)
+- 소스코드에는 보이지 않는다.
+- React는 소스코드에 처음부터 HTML에 넣지 않고, HTML에서 HTML을 추가하거나 제거하는 방법을 알고 있다.
+- 빈 HTML파일을 불러오고, react가 HTML을 밀어넣는다. ("root"에 밀어넣는다.)
+- 이러한 특징들이 빠르게 작용한다.
 
-### `npm test`
+## Component
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- component 는 HTML을 반환하는 함수
+- `<App />` 컴포넌트 사용 (JSX = Javascript + HTML)
+- Props 는 Component 의 argument 로 들어간다.
+```react
+import React from "react";
 
-### `npm run build`
+function Food(props) {
+  return <h1>I like Food {props.fav}</h1>;
+}
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+function App() {
+  return (
+        <div>
+​      <h1>Hello</h1>
+​      <Food fav="kimchi" />
+​    </div>
+  );
+}
+export default App;
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## 필기
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `map` 활용
+- `map` 은 return 데이터는 array이다.
+```react
+function renderFood(dish) {
+  console.log(dish);
+  return <Food name={dish.name} picture={dish.image}/>;
+}
 
-### `npm run eject`
+function App() {
+    return (
+        <div>
+            <h1>Hello</h1>
+            {foodILike.map(renderFood)}
+        </div>
+    );
+}
+```
+- Prop 을 인자로 받을 때, 정확한 인자를 받았는지 확인하는 단계가 필요하다.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
